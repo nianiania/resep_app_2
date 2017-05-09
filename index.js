@@ -86,7 +86,8 @@ app.route('/detail_resep')
 				res.render('detail_resep',{
 					ID: result.rows[0].id,
 					Nama_Resep: result.rows[0].nama_resep,
-					Deskripsi: result.rows[0].penulis,
+					Deskripsi: result.rows[0].deskripsi,
+					Penulis: result.rows[0].penulis,
 					Cara_Pembuatan: result.rows[0].cara_pembuatan,
 				})
 
